@@ -1,4 +1,5 @@
-function getPictures() {
+
+function getPictures(count) {
     const picture = {
         id:1,
         url: './photos/1.jpg',
@@ -19,11 +20,12 @@ function getPictures() {
 
     const arrayPictures = [];
 
-    while (arrayPictures.length < 10) {
+    while (arrayPictures.length < count) {
         arrayPictures.push(picture)
 }
 
     return arrayPictures;
 }
 
-getPictures();
+console.log(getPictures(3));
+
