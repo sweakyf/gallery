@@ -1,0 +1,25 @@
+:root {
+    --container-width: 1296px;
+    --card-width: 288px;
+    --cards-in-row: 4;
+}
+
+body {
+    height: 100vh;
+    background-image: linear-gradient(45deg, #DEDDF0, #B6BCF2);
+}
+
+.pictures-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card:not(:nth-child(4)) {
+    margin-right: 48px;
+}
+
+img {
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+}
